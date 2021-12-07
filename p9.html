@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>KT Son | Code 2 Portfolio</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- import the webpage's javascript file -->
+    <script src="/script.js" defer></script>
+  </head>
+
+  <body>
+    <!-- navigation menu -->
+    <div class="nav">
+      <h1>KT Son</h1>
+      <ul>
+        <li>Project 1: <a href="p1.html">Lost & Found</a></li>
+        <li>Project 2: <a href="p2.html">Face Generator</a></li>
+        <li>Project 3: <a href="p3.html">Experimental Clock</a></li>
+        <li>Project 4: <a href="p4.html">Exquisite Corpse</a></li>
+        <li>Project 5: <a href="p5.html">Optical Illustion</a></li>
+        <li>Project 6: <a href="p6.html">Data Portrait</a></li>
+        <li>Project 7: <a href="p7.html">Bitmap Game</a></li>
+        <li>Project 8: <a href="p8.html">Experimental Camera</a></li>
+        <li>Project 9: <a href="p9.html">Consentful Interface</a></li>
+        <li>Project 10: <a href="p10.html">Anti-Surveillance Tool</a></li>
+      </ul>
+    </div>
+    
+
+    <!-- main content -->
+    <div class="content">
+      <!-- 1. give your project  a titile -->
+
+      <h1>
+        Project #9 Consentful Interface:
+      </h1>
+      <h1 class="regular-h1">
+        Confused Patrick Camera (with Consent)
+      </h1>
+        
+      
+      
+
+      <!-- 2. embed your p5 sketch -->
+
+      <div class="fullwidth">
+        <!-- below width and height refers to the dimensions of your sketch-->
+
+        <iframe
+          allow="camera"
+                all
+          width="800px"
+          height="500px"
+          src="https://editor.p5js.org/ktkt/full/WPjMEflY2"
+        ></iframe>
+        <p>
+          * Move around the frame to <i>really</i> feel the gaze. * </br>
+   
+        <a href = "https://editor.p5js.org/ktkt/full/WPjMEflY2"> Open camera in a new browser</a> </br>
+      </p>
+      </div>
+ 
+      <!-- 3. write a short description to describe what the work is about -->
+      <h1>
+        Description
+      </h1>
+
+      <p>
+        This experimental camera is an homage to the dear childhood friend Patrick Star, as well as a play on the idea of 
+        our digital bodies being unconscious and overly conscious of being seen & tracked at all times. I thought "Who are you people"
+        relates heavily with the idea of "liquid surveillance" Xin introduced during the 
+        <a href= "https://www.youtube.com/watch?v=KEeIhb8I34k&list=PLhlnwyfMOozUYusIdhgqHBhtq7vUhNDGv&index=11">lecture on Consentful Interface</a>.
+        <i>Who</i> are the people watching us? How long are they watching for, and who is to follow next?
+      </p>
+  
+      <!-- 4. reflection -->
+      <h1>
+        Design Process
+      </h1>
+  <p>
+    For this project, I most wanted to play with facial recognition and specifically, facial expression recognition. 
+  </p>
+  <p>
+    <b>Flowchart idea 1:</b>
+  </p>
+      <p>
+         <img src="https://cdn.glitch.me/698becb7-bcb5-4208-b71f-b08e28ed8c4f%2Fconcept1.jpg?v=1638299314893" width = 700>
+       
+        
+        
+        At first, I didn't think my camera would need many steps or processes to be turned into a consentful interface that follows the 
+        <a href="https://www.andalsotoo.net/wp-content/uploads/2018/10/Building-Consentful-Tech-Zine-SPREADS.pdf">F.R.I.E.S. framework</a>. 
+</br></br>I knew I wanted to introduce the camera, and on the same introductory page, clarify a few things:
+
+    <ol type="1">
+        <li>The app will use your device's camera</li>
+        <li>The recording is not being accessed by anyone else</li>
+        <li>The recording is not stored anywhere</li>
+        <li>The user can quit at any time</li>
+      </ol>
+Simulating the experience using this flowchart, I realized the introductory page contains too much information to be absorbed
+on a single page.</br></br>  
+</p>
+<p>
+    <b>Flowchart idea 2:</b>
+  </p>
+      <p>
+         <img src="https://cdn.glitch.me/698becb7-bcb5-4208-b71f-b08e28ed8c4f%2Fconcept2.jpg?v=1638299340957" width = 700>
+       
+        Walking through the first concept, I also felt that there is a need to ask for consent regarding the audio clip that gets played
+fairly suddenly. I'm not sure if it's my own particularity, but I tend to feel almost invaded if a webpage or an app generates unexpected
+(extent of) stimuli.</br></br> Initially, I was going to give the user the option to turn audio on/off during the experience, but given that
+the audio clip is a very short spurt, felt that the experience will be more comprehensive if the decision was made prior to the experience.
+</p>
+  <p>
+    <b>Final flowchart:</b>
+  </p>
+<img src="https://cdn.glitch.me/698becb7-bcb5-4208-b71f-b08e28ed8c4f%2Fflowchart-01.png?v=1638298375143" height = 450>
+
+<p>
+  The final flowchart thus
+     <ol type="1">
+        <li>1.  Breaks down the introductory page to 2 steps: one screen showing the title of the app, and the next screen walking the user through the 
+       webcam use</li>
+        <li>2.  Gives the user the option to enter the experience with or without sound</li>
+      </ol>
+</p>
+ 
+
+      </p>
+
+
+      <!-- 4. reflection -->
+      <h1>
+        Reflection
+      </h1>
+
+      <p>
+        I tried to follow the F.R.I.E.S. framework by
+           <ol type="1">
+        <li>Having users make the decision with information on what the interface does, and without pressure</li>
+        <li>Using clear and accessible language explaining what goes into it</li>
+        <li>Giving users the option to reverse their decision and quit/restart the camera</li>
+      </ol>
+    With this interface, users can actively consent to use none, parts, or all of the elements of the camera, which drastically contrasts
+with the previous experience that immediately prompts the camera and sound without the users' awareness.
+</br>
+
+</br> 
+
+
+      </p>
+      
+       <!-- 5. reflection -->
+      
+      
+    </div>
+  </body>
+</html>

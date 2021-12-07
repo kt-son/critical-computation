@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>KT Son | Face Generator</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- import the webpage's javascript file -->
+    <script src="/script.js" defer></script>
+  </head>
+
+  <body>
+    <!-- navigation menu -->
+    <div class="nav">
+      <h1>KT Son</h1>
+      <ul>
+        <li>Project 1: <a href="p1.html">Lost & Found</a></li>
+        <li>Project 2: <a href="p2.html">Face Generator</a></li>
+        <li>Project 3: <a href="p3.html">Experimental Clock</a></li>
+        <li>Project 4: <a href="p4.html">Exquisite Corpse</a></li>
+        <li>Project 5: <a href="p5.html">Optical Illustion</a></li>
+        <li>Project 6: <a href="p6.html">Data Portrait</a></li>
+        <li>Project 7: <a href="p7.html">Bitmap Game</a></li>
+        <li>Project 8: <a href="p8.html">Experimental Camera</a></li>
+        <li>Project 9: <a href="p9.html">Consentful Interface</a></li>
+        <li>Project 10: <a href="p10.html">Anti-Surveillance Tool</a></li>
+      </ul>
+    </div>
+
+<!-- main content -->
+
+<div class="content">
+      <!-- 1. give your project  a titile -->
+
+      <h1>
+        Project #2 Face Generator:
+      </h1>
+      <h1 class="regular-h1">
+        Give the Dog What They Want.<br>
+        Then Give the Cat What They Want.
+      </h1>
+        
+      
+      
+
+      <!-- 2. embed your p5 sketch -->
+
+      <div class="fullwidth">
+        <!-- below width and height refers to the dimensions of your sketch-->
+
+        <iframe
+          allow="camera"
+          width="400px"
+          height="400px"
+          src="https://preview.p5js.org/ktkt/embed/UJp-MlXep"
+        ></iframe>
+        <p>
+        *Click the canvas to see the color of the dog change.* <br>*Hit any key on the keyboard to switch it to a cat.*
+      </p>
+    
+        
+      </div>
+
+      <!-- 3. write a short description to describe what the work is about -->
+      <h1>
+        Description
+      </h1>
+
+      <p>
+        This week, we learned how to randomly generate values, incorporate mouseX and mouseY coordinates, and interact with
+        mouse clicks and mouse/key presses.
+        I wanted to create a playful interaction that combines all of these elements into one.
+  
+
+
+        
+      </p>
+
+      <!-- 4. reflection -->
+      <h1>
+        Design Process
+      </h1>
+      <img src="https://cdn.glitch.com/698becb7-bcb5-4208-b71f-b08e28ed8c4f%2FA2%20sketch.jpg?v=1631637265699">
+      
+      <p>
+        Initially, I set up different variables for R/G/B values for each part of the face: the face shape, eye color,
+        freckles, nose, and lips. Then, I dug into limiting the ranges of some of those components by fixing them with a set
+        of RGB values and adding/subtracting a randomized amount. Eventually, I ended up just randomizing the face
+        color, and played around with blend modes to ensure all of the components on the face would be determined relative to
+        the main color, and remain visible and compatible with the face color. 
+      </p>
+      
+      <img src="https://cdn.glitch.com/698becb7-bcb5-4208-b71f-b08e28ed8c4f%2Fdog-compilation.png?v=1631651824458" width="600" height="150">
+      <p>
+        I incorporated the mouse coordinate interaction by adding a stretching bone. I also changed up the eye movement 
+        and facial expression of the dog to follow the magic bone.
+      </p>
+    
+      <img src="https://cdn.glitch.com/698becb7-bcb5-4208-b71f-b08e28ed8c4f%2Fcat-compliation.png?v=1631651813709" width="600" height="150">
+      <p>
+        The fish bones were tricker to make, and it took me a while to figure out how to continuously add lines with a set 
+        interval in between. I recalled the interactivity from Leffin's zipper from last class, and asked if I could play
+        around with the for statement he used to add the teeth. Upon much trial and error, it worked! 
+      </p>
+
+      <!-- 4. reflection -->
+      <h1>
+        Reflection
+      </h1>
+      
+      <p>
+        In the ideation stage, instead of randomizing the RGB values or size of shapes, I wanted to blend shapes that comprise of my 
+        drawing of a cat (ie. pointed ears, triangular nose) and those of my dog dawing (ie. long ears, round nose), and 
+        then pick random points in that transition (ie. from a triangle to an ellipse) to create mid-stage creatures
+        between a dog and a cat. Realizing that blending shapes isn't in the scope of the project, I pivoted to switching
+        from a dog and a cat using the system variable keyIsPressed, and used the randomization effect to determine the RGB 
+        values of the face and the accompanying snack. I hope to soon learn how to blend shapes and generate various types of catdogs.
+      </p>
+      
+       <!-- 5. reflection -->
+      <h1>
+        Credits
+      </h1>
+      
+      <p>
+        For statement for sparsed shape drawing: <a href="https://editor.p5js.org/Falcyon/sketches/vUwgtrwcw">Lost & Found, Christopher Leffin</a> 
+      </p>
+      
+    </div>
+  </body>
+</html>
+
