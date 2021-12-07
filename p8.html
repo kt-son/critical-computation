@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>KT Son | Code 2 Portfolio</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- import the webpage's javascript file -->
+    <script src="/script.js" defer></script>
+  </head>
+
+  <body>
+    <!-- navigation menu -->
+    <div class="nav">
+      <h1>KT Son</h1>
+      <ul>
+        <li>Project 1: <a href="p1.html">Lost & Found</a></li>
+        <li>Project 2: <a href="p2.html">Face Generator</a></li>
+        <li>Project 3: <a href="p3.html">Experimental Clock</a></li>
+        <li>Project 4: <a href="p4.html">Exquisite Corpse</a></li>
+        <li>Project 5: <a href="p5.html">Optical Illustion</a></li>
+        <li>Project 6: <a href="p6.html">Data Portrait</a></li>
+        <li>Project 7: <a href="p7.html">Bitmap Game</a></li>
+        <li>Project 8: <a href="p8.html">Experimental Camera</a></li>
+        <li>Project 9: <a href="p9.html">Consentful Interface</a></li>
+        <li>Project 10: <a href="p10.html">Anti-Surveillance Tool</a></li>
+      </ul>
+    </div>
+
+    <!-- main content -->
+    <div class="content">
+      <!-- 1. give your project  a titile -->
+
+      <h1>
+        Project #8 Experimental Camera:
+      </h1>
+      <h1 class="regular-h1">
+        WHO ARE YOU PEOPLE
+      </h1>
+        
+      
+      
+
+      <!-- 2. embed your p5 sketch -->
+
+      <div class="fullwidth">
+        <!-- below width and height refers to the dimensions of your sketch-->
+
+        <iframe
+          allow="camera"
+                all
+          width="800px"
+          height="500px"
+          src="https://editor.p5js.org/ktkt/full/kJzYCK20A"
+        ></iframe>
+        <p>
+          * Move around the frame to <i>really</i> feel the gaze. * </br>
+   
+        <a href = "https://editor.p5js.org/ktkt/full/kJzYCK20A"> Open camera in a new browser</a> </br>
+      </p>
+      </div>
+ 
+      <!-- 3. write a short description to describe what the work is about -->
+      <h1>
+        Description
+      </h1>
+
+      <p>
+        This experimental camera is an homage to the dear childhood friend Patrick Star, as well as a play on the idea of 
+        our digital bodies being unconscious and overly conscious of being seen & tracked at all times. I thought "Who are you people"
+        relates heavily with the idea of "liquid surveillance" Xin introduced during the 
+        <a href= "https://www.youtube.com/watch?v=KEeIhb8I34k&list=PLhlnwyfMOozUYusIdhgqHBhtq7vUhNDGv&index=11">lecture on Consentful Interface</a>.
+        <i>Who</i> are the people watching us? How long are they watching for, and who is to follow next?
+      </p>
+  
+      <!-- 4. reflection -->
+      <h1>
+        Design Process
+      </h1>
+  <p>
+    For this project, I most wanted to play with facial recognition and specifically, facial expression recognition. 
+  </p>
+  <p>
+    <b>Concept 1: Christmas Lights</b>
+  </p>
+      <p>
+         <img src="https://cdn.glitch.me/698becb7-bcb5-4208-b71f-b08e28ed8c4f%2Fconcept1.jpg?v=1637125206776" height = 100>
+       
+        
+        
+        The first concept started out quite simple. Detecting the occurrence of blinks using either top and bottom eye positions or the 
+        disappearance of the pupil coordinate, the lights in the background would light up with each blink. </br></br>  
+</p>
+<p>
+    <b>Concept 2: Emoji Generator</b>
+  </p>
+      <p>
+         <img src="https://cdn.glitch.me/698becb7-bcb5-4208-b71f-b08e28ed8c4f%2Fconcept2.jpg?v=1637125210468" height = 100>
+       
+        The second concept was the most ambitious one – one that would recognize blinks, smiles, and other movements of the mouth to replicate 
+        the facial expresssion in a simple, emoji-like forms. </br></br>  
+</p>
+<p>
+  I tried out how these simple facial expression detection would look like, and quickly sketched them in P5.
+</p>
+<img src="https://cdn.glitch.me/698becb7-bcb5-4208-b71f-b08e28ed8c4f%2FScreen%20Shot%202021-11-16%20at%207.50.24%20PM.png?v=1637126912751" height = 450>
+
+<p>
+  Problem encountered: clmtrkr.js wasn't detecting my face properly most of the time, let alone get the coordinates of facial features correctly.
+  Even when my face was correctly detected, it seemed like the coordinates of top of eye/lip always stayed higher than the bottom points
+  (ie. it was as if the top of eye, pupil, bottom of eye coordinates were consistently stacked vertically, even when I blinked really hard. Same thing with
+  the mouth – even when I placed my bottom lip above the top lip, it couldn't consistently recognize a closed vs open mouth). </br></br> 
+
+After a few more attempts at getting the facial expression recognition right, I moved onto implementing my third concept:
+</p>
+ 
+<p>
+    <b>Concept 3: WHO ARE YOU PEOPLE</b>
+  </p>
+      <p>
+         <img src="https://cdn.glitch.me/698becb7-bcb5-4208-b71f-b08e28ed8c4f%2Fconcept3.jpg?v=1637125215984" height = 100>
+       
+        I have been wanting to incorporate the <a href = "https://p5js.org/examples/math-arctangent.html">arctangent eye movements</a> in my P5 project for while. I did incoporate it to 
+        my Bitmap game (eyes tracking the player's movement), but the visual effect of the eye movement was minimal given
+        the context of the game. Playing with the idea of unconscious and/or overly conscious surveillance, I wanted to throw
+        in a bunch of eyeballs and have it follow the person in the frame. </br></br> This reminded me of one of the most iconic
+scenes from Spongebob, where Patrick returns home with groceries and an ice cream in his hands and finds a bunch of people hiding under his shell-roofed home.</br>  
+</p>
+        <iframe width="560" height="400" src="https://www.youtube.com/embed/uHlvc8dOv_Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        
+
+
+      </p>
+</br></br> 
+</br></br> 
+  <h1>
+        Photos
+      </h1>
+      <img src="https://cdn.glitch.me/698becb7-bcb5-4208-b71f-b08e28ed8c4f%2FA8%20screenshots-01.png?v=1637125220830" height = 230>
+      <img src="https://cdn.glitch.me/698becb7-bcb5-4208-b71f-b08e28ed8c4f%2FA8%20screenshots-02.png?v=1637125225279" height = 230>
+      <img src="https://cdn.glitch.me/698becb7-bcb5-4208-b71f-b08e28ed8c4f%2FA8%20screenshots-03.png?v=1637125227613" height = 230>
+      <img src="https://cdn.glitch.me/698becb7-bcb5-4208-b71f-b08e28ed8c4f%2FA8%20screenshots-04.png?v=1637125232260" height = 230>
+      <img src="https://cdn.glitch.me/698becb7-bcb5-4208-b71f-b08e28ed8c4f%2FA8%20screenshots-05.png?v=1637125237757" height = 230>
+      <img src="https://cdn.glitch.me/698becb7-bcb5-4208-b71f-b08e28ed8c4f%2FA8%20screenshots-06.png?v=1637125241177" height = 230>
+
+    
+
+</br></br> 
+</br></br> 
+
+      <!-- 4. reflection -->
+      <h1>
+        Reflection
+      </h1>
+
+      <p>
+        Facial recognition that felt simple enough (ie. blink, mouth opening & closing) seemed difficult to be managed by the resources
+        we had.
+        I don't know if it's my face specifically, but clmtrkr.js had trouble keeping the positions in the correct places to begin with.
+        With more time, I'd explore other libraries or platforms that allow for a more accurate and consistent face tracking to try making
+        the interactive filters I dreamed of making with the concepts.
+  </br></br>
+        Additionally, my computer was panting <i>hard</i> while working on this project. I'd love to be able to try more strenuous
+        effects when I get a new computer in the new year!
+</br>
+
+</br> 
+
+
+      </p>
+      
+       <!-- 5. reflection -->
+      
+      
+    </div>
+  </body>
+</html>

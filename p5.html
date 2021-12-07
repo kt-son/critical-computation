@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>KT Son | Code 2 Portfolio</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- import the webpage's javascript file -->
+    <script src="/script.js" defer></script>
+  </head>
+
+  <body>
+    <!-- navigation menu -->
+    <div class="nav">
+      <h1>KT Son</h1>
+      <ul>
+        <li>Project 1: <a href="p1.html">Lost & Found</a></li>
+        <li>Project 2: <a href="p2.html">Face Generator</a></li>
+        <li>Project 3: <a href="p3.html">Experimental Clock</a></li>
+        <li>Project 4: <a href="p4.html">Exquisite Corpse</a></li>
+        <li>Project 5: <a href="p5.html">Optical Illustion</a></li>
+        <li>Project 6: <a href="p6.html">Data Portrait</a></li>
+        <li>Project 7: <a href="p7.html">Bitmap Game</a></li>
+        <li>Project 8: <a href="p8.html">Experimental Camera</a></li>
+        <li>Project 9: <a href="p9.html">Consentful Interface</a></li>
+        <li>Project 10: <a href="p10.html">Anti-Surveillance Tool</a></li>
+      </ul>
+    </div>
+
+    <!-- main content -->
+    <div class="content">
+      <!-- 1. give your project  a titile -->
+
+      <h1>
+        Project #5 Optical Illusion:
+      </h1>
+      <h1 class="regular-h1">
+        A Round of Dalgona?
+      </h1>
+        
+      
+      
+
+      <!-- 2. embed your p5 sketch -->
+
+      <div class="fullwidth">
+        <!-- below width and height refers to the dimensions of your sketch-->
+
+        <iframe
+          allow="camera"
+          width="600px"
+          height="600px"
+          src="https://preview.p5js.org/ktkt/embed/_4mmaSzgH"
+        ></iframe>
+      <p>
+        *   1. Crack the Dalgona * </br>
+        * 2. Find the keyhole * </br>
+    * 3. Join the game (<i>highly optional</i>) *
+      </p>
+      </div>
+
+      <!-- 3. write a short description to describe what the work is about -->
+      <h1>
+        Description
+      </h1>
+
+      <p>
+        For the pattern making assignment, I wanted to use patterns of Dan-Chung (단청). 
+      </p>
+  
+      <img src="https://cdn.glitch.me/698becb7-bcb5-4208-b71f-b08e28ed8c4f%2FIMG_2407_Original.jpg?v=1633469690187" height = 400>
+      <img src="https://cdn.glitch.me/698becb7-bcb5-4208-b71f-b08e28ed8c4f%2FScreen%20Shot%202021-10-05%20at%206.11.15%20PM.png?v=163347188683" height = 400>
+    
+      <p>
+        Dan-Chung describes different traditional patterns that decorate the exterior of 
+        palaces and temples in Korea. They comprise of various geometric patterns, and serve not only to 
+        decorate the structures, but also to protect the building from corrosion and insects.
+      </p>
+  
+      <p>
+        As beautiful as these patterns are, I realized that most who were alive during the Joseon dynastry 
+        probably didn't see any of the more complex and intricate patterns, which adorn the interior of palace 
+        buildings that exist inside the gates. That is, if you even belonged to the class that resided near 
+        the palace to even see what patterns decorated the gates.  
+      </p>
+  
+      
+      <p>
+        This realization drew my attention to "Squid Game," the mega-hyped Korean Netflix original that elucidates
+        the almost-invisible modern class strife in a deadly game of betted lives. I chose to incorporate the round of 
+        Dalgona challenge, one of the most viral parts of the show, to illustrate how beauty and aesthetics 
+        were concepts inextricably linked to privilege. 
+      </p>
+      <!-- 4. reflection -->
+      <h1>
+        Design Process
+      </h1>
+      <p>
+        Wanting to explore patterns of Dan-Chung I was less familar with, I avoided lotus/circular flower type patterns 
+        and picked from the more geometric patterns used to fill surface areas often surrounded by more accented edges.
+      </p>
+  
+      <p>
+        I picked the So-Seul (소슬) pattern that resembles Goyard's Chevron pattern.
+      </p> 
+  
+      <img src = "https://cdn.glitch.me/698becb7-bcb5-4208-b71f-b08e28ed8c4f%2FScreen%20Shot%202021-10-05%20at%206.19.13%20PM.png?v=1633472375836" width = 740>
+    
+      <p>
+        I first created a singular occurrence of this pattern on Illustrator, and used the <a href="https://svg2p5.com/">svg2p5 tool</a> to convert the
+        shape to a p5 element.
+      </p>
+      <p>
+        Then, I used 6 <b>nested for loops</b> to repeat the pattern in 6 different variatons:
+        <ol type="1">
+          <li>Blue; Blue Offset; Green; Green Offset; Red; Red Offset</li>
+        </ol>
+      </p>
+      <img src = "https://cdn.glitch.me/698becb7-bcb5-4208-b71f-b08e28ed8c4f%2FA5_compiled.png?v=1633474141820" width = 740> 
+
+      <p>
+        To incorporate the Dalgona challenge, I created an image of the sweet in the So-Seul shape. 
+      </p>
+
+      <p>
+        I "cracked" the png file in pieces, and layered them together. Using <b>if statements</b> tracking the count of
+        clicks, I deleted the fragments of the Dalgona piece by piece, leading to a perfect cutout in the So-Seul shape.
+      </p>
+      
+      <p>
+        I wanted to provide a more complete story to the assigment, and added another little "game" component after the show.
+        When the viewer drags the last Dalgona piece, they will encounter a key hole, clicking which would lead to the very
+        business card that the characters on the show get before enrolling in the game.
+      </p>
+
+      <img src = "https://cdn.glitch.me/698becb7-bcb5-4208-b71f-b08e28ed8c4f%2Fimg.jpeg?v=1633473928179" width = 740>
+      </br></br>
+
+
+      <!-- 4. reflection -->
+      <h1>
+        Reflection
+      </h1>
+
+      <p>
+        Pulling from the viral show with a piercing commentary was fun, but I wish I had more time to study the traditional 
+        patterns and played around with the meaning of them to create an interaction that explored those concepts. </br></br> 
+      </p>
+      
+       <!-- 5. reflection -->
+      <h1>
+        Credits
+      </h1>
+      
+      <p>
+        <a href="http://aodr.org/_common/do.php?a=full&b=12&bidx=332&aidx=4158">A Study on Computer Embroidery Pattern Design Using Koran Dan-Chung Patterns</a>, Hayoung Song </br>
+        <a href="https://www.netflix.com/title/81040344">Squid Game</a>, Netflix
+      </p>
+      
+    </div>
+  </body>
+</html>
+
